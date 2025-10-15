@@ -1,0 +1,41 @@
+<div class="container">
+    <h2 class="titulos">Programa 2 - Código em C</h2>
+    <p class="paragrafo">Programa que lê a idade de três pessoas e indica quem é mais velha, do meio e mais nova.</p>
+
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    int ci1, ca2, c3, inteiro;
+
+    printf("\nColoque a idade de Cibele:");
+    scanf("%d", &ci1);
+
+    printf("\nColoque a idade de Camila:");
+    scanf("%d", &ca2);
+
+    printf("\nColoque a idade de Celeste:");
+    scanf("%d", &c3);
+
+    if ((ci1 &gt; ca2) &amp;&amp; (ci1 &gt; c3)) {
+        printf("\nCibele e mais velha");
+    }
+
+    if ((ca2 &lt; ci1) &amp;&amp; (ca2 &gt; c3)) {
+        printf("\nCamila e a do meio");
+    }
+
+    if ((c3 &lt; ci1) &amp;&amp; (c3 &lt; ca2)) {
+        printf("\nCeleste e a mais nova");
+    }
+
+    if ((ci1 == ca2) &amp;&amp; (ci1 == c3) &amp;&amp; (c3 == ca2)) {
+        printf("\nTodas tem a mesma idade");
+    }
+
+    if ((ci1 &gt; ca2) &amp;&amp; (c3 &gt; ca2)) {
+        printf("\nCeleste e a do meio");
+    }
+}
+    </code></pre>
+</div>

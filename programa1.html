@@ -1,0 +1,35 @@
+<div class="container">
+    <h2 class="titulos">Programa 1 - Código em C</h2>
+    <p class="paragrafo">Este é um programa simples em C que lê 5 números, calcula a soma, a divisão e a média.</p>
+
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    int i, num[5], soma, maior, div, med;
+    soma = 0;
+    div = 0;
+    med = 0;
+
+    for (i = 0; i &lt; 5; i++) {
+        printf("\nDigite o numero na posicao %d ", i);
+        scanf("%d", &num[i]);
+    }
+
+    for (i = 0; i &lt; 5; i++) {
+        soma = soma + num[i];
+    }
+    printf("\nA soma foi %d", soma);
+
+    for (i = 0; i &lt; 5; i++) {
+        div = div / num[i];
+    }
+    printf("\nA div foi %d", div);
+
+    for (i = 0; i &lt; 5; i++) {
+        med = soma / 3;
+    }
+    printf("\nA med foi %d", med);
+}
+    </code></pre>
+</div>
